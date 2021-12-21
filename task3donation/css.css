@@ -1,0 +1,108 @@
+.body {
+  background-image: url("home.jpg");
+}
+
+.quote {
+  color: rgb(221, 13, 141);
+  position: relative;
+  padding-top: 5%;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Caveat";
+  animation: quote 1s 0s;
+  text-shadow: 15px;
+  text-decoration-style: solid;
+}
+.img {
+  height: 200px;
+  position: relative;
+  text-align: center;
+  font-size: large;
+  font-weight: 200;
+  animation: img 0.5s 0s;
+}
+.center {
+  height: 200px;
+  position: relative;
+  text-align: center;
+  font-size: large;
+  font-weight: 200;
+  font-family: "Bakbak One";
+  animation: center 1.5s 0s;
+}
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration-style: dotted;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  animation: button 2s;
+}
+.button:after {
+  content: "";
+  background: #90ee90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.button:active {
+  background-color: rgb(248, 238, 238);
+}
+@keyframes quote {
+  0% {
+    opacity: 0%;
+  }
+  40% {
+    opacity: 0%;
+    top: -50px;
+  }
+  100% {
+    opacity: 100%;
+    top: 0px;
+  }
+}
+
+@keyframes img {
+  0% {
+    opacity: 0%;
+  }
+  40% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes center {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+    top: 40px;
+  }
+  100% {
+    opacity: 100%;
+    top: 0px;
+  }
+}
+@keyframes button {
+  0% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    object-position: 0%;
+  }
+}
